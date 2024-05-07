@@ -30,7 +30,7 @@ let bowl;
 let counter = 0;
 
 
-let offset = 65;       
+// let offset = 65;       
 let displayState = 0;  
 let song;
 let currentImage;
@@ -53,13 +53,13 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 700);
+  createCanvas(2500, 1550);
   video = createCapture(VIDEO);
   video.size(220, 160);
   video.hide();
   flippedVideo = ml5.flipImage(video);
   classifyVideo();
-  fillColor = color(0, 0, 0);
+ 
   
   // Set the click event for the check-out button
   let checkOutButton = document.getElementById("check-out-button");
@@ -70,11 +70,11 @@ function setup() {
 
 function draw() {
   background(img);
-  fill(fillColor);
-  ellipse(60, 650, 50, 50);
+  // fill(fillColor);
+  // ellipse(100, 1220, 50, 50);
   
   if(displayImage) {
-      image(currentImage, 395, 140, 500, 500);
+      image(currentImage, 1500, 300, 800, 800);
   }
 
 }
