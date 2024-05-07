@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.scanned-container {
+  position: absolute;
+  width: 300px;
+  height: 60%;
+  top: 60%;
+  left: 80px;
+  transform: translateY(-50%);
+  /* background-color: orange; */
+  overflow-y: scroll;
+}
+
+.scanned-item {
+  padding: 16px; 
+  border: 3px solid black;
+  border-radius: 15px;
+  font-family: Arial;
+  width: calc(300px); 
+  margin: 12px auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#counter {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    bottom: 5px;
+    left: 70px;
+}
+
+.green-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;             /* No border */
+    color: white;             /* White text */
+    padding: 15px 32px;       /* Padding */
+    text-align: center;       /* Center text */
+    text-decoration: none;    /* No underline */
+    display: inline-block;    /* Inline block */
+    font-size: 16px;          /* Font size */
+    margin: 4px 2px;          /* Margin */
+    cursor: pointer;          /* Pointer cursor on hover */
+    border-radius: 8px;       /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect */
+  position: absolute;
+    top: 700px;
+    left: 740px;
+    transform: translate(-50%, -50%);
+}
+
+.green-button:hover {
+    background-color: white;  /* White background on hover */
+    color: black;             /* Black text on hover */
+}
+
+.blue-button {
+    background-color: #008CBA; /* Blue background */
+    border: none;             /* No border */
+    color: white;             /* White text */
+    padding: 15px 32px;       /* Padding */
+    text-align: center;       /* Center text */
+    text-decoration: none;    /* No underline */
+    display: inline-block;    /* Inline block */
+    font-size: 16px;          /* Font size */
+    margin: 4px 2px;          /* Margin */
+    cursor: pointer;          /* Pointer cursor on hover */
+    border-radius: 8px;       /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect */
+  position: absolute;
+    top: 700px;
+    left: 900px;
+    transform: translate(-50%, -50%);
+}
+
+.blue-button:hover {
+    background-color: white;  /* White background on hover */
+    color: black;             /* Black text on hover */
+}
